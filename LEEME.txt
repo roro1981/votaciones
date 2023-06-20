@@ -1,0 +1,37 @@
+Instrucciones de instalación del proyecto en XAMPP
+
+1. Descarga e instala XAMPP:
+   - Ve al sitio web de Apache Friends (https://www.apachefriends.org/es/index.html).
+   - Descarga la versión correspondiente de XAMPP para tu sistema operativo.
+   - Sigue las instrucciones de instalación para completar la instalación de XAMPP en tu máquina.
+
+2. Clona el repositorio del proyecto:
+   - Abre la línea de comandos (terminal) en tu sistema.
+   - Navega hasta el directorio donde deseas almacenar el proyecto (Generalmente es la carpeta htdocs dentro de C:/xampp).
+   - Ejecuta el siguiente comando para clonar el repositorio:
+     git clone <URL_del_repositorio>
+
+3. Configura la base de datos:
+   - Abre el panel de control de XAMPP.
+   - Inicia los servicios de Apache y MySQL.
+   - Abre tu navegador web y visita http://localhost/phpmyadmin.
+   - Crea una nueva base de datos, debes copiar el contenido del archivo database.sql (que se encuentra dentro de la carpeta SQL 
+     que está en la raíz del proyecto), en la pestaña SQL.
+   - Una vez dentro de la nueva base de datos ir a la pestaña SQL y copiar el contenido de los archivos con prefijo "tabla_" en orden,
+     segun su numero (fijarse en la documentacion de cada archivo).
+
+4. Configura la conexión a la base de datos:
+   - Abre el proyecto en tu editor de código favorito.
+   - Busca el archivo de configuración de conexión a la base de datos (includes/conex.php).
+   - Dentro del archivo, busca las configuraciones de host, usuario, contraseña y nombre de la base de datos.
+   - Asegúrate de que la configuración se ajuste a la base de datos dentro de phpmyadmin.
+
+5. Ejecuta el proyecto:
+   - Abre tu navegador web y visita http://localhost/<ruta_del_proyecto>.
+   - Deberías poder acceder al proyecto y utilizar sus funcionalidades.
+
+PHP Version 5.6.40   
+MySQL Version 10.1.38-MariaDB
+
+¡Listo! Ahora has instalado y configurado el proyecto en tu entorno local utilizando XAMPP.
+
